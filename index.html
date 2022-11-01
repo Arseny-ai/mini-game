@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>В пещере дракона</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,500;0,800;1,500&display=swap');
@@ -14,30 +16,32 @@
     }
 
     .level {
-      height: 200vh;
+      height: 100vh;
       padding: 10px 20px;
       font-size: 3.5vmin;
     }
 
-    html {
+    body {
       background-color: #242424;
       color: #6e4040;
-    }
-
-    body {
       font-family: 'JetBrains Mono';
       overflow: hidden;
     }
 
     .area {
       color: #774545;
-      margin: 20px 20px;
-      padding: 0 20px;
+      margin: 3vh 0;
+      padding: 0 0 0 20px;
       border-left: #774545 3px solid;
     }
 
+    nav.area,
+    h1,
+    h2 {
+      background-color: #77454520;
+    }
+
     a {
-      display: inline-block;
       text-decoration: none;
       color: #6e4040;
     }
@@ -49,19 +53,21 @@
     <h1>Мини-игра "В пещере дракона..."</h1>
     <p class="area">
       Вы попадаете в пещеру дракона и понимаете, что вам нужно поскорее выбираться отсюда, чтобы попасть домой. Вам
-      ждут множество опасных ситуаций, в которых вы можете погибнуть. Посторайтесь выжить и пройти игру до конца. Удачи!
+      ждут множество опасных ситуаций, в которых вы можете погибнуть. Постарайтесь выжить и пройти игру до конца. Удачи!
     </p>
     <div class="area">
       <p><i>Опционально</i></p>
-      <iframe frameborder="0" style="border:none;width:100%;height:9vmax;" width="100%"
-        src="https://music.yandex.ru/iframe/#track/58852581/9036901">Listen to <a
-          href='https://music.yandex.ru/album/9036901/track/58852581?lang=en'>Wasserspiele</a> — <a
+      <iframe tabindex="-1" frameborder="0" style="border:none;width:100%;height:9vmax;" width="100%"
+        src="https://music.yandex.ru/iframe/#track/58852581/9036901">Listen to <a tabindex="-1"
+          href='https://music.yandex.ru/album/9036901/track/58852581?lang=en'>Wasserspiele</a> — <a tabindex="-1"
           href='https://music.yandex.ru/artist/8226168?lang=ru'>Miethe</a> on Yandex Music</iframe>
     </div>
     <p class="area"><strong>
         В этом квесте нужно выбирать варианты ответов. Помните, ваши решения имеют последствия.
       </strong></p>
-    <a class="area" href="#level-1-0">Начать игру</a>
+    <nav class="area">
+      <a tabindex="-1" href="#level-1-0">Начать игру</a>
+    </nav>
   </header>
   <main>
     <section class="level" id="level-1-0">
@@ -70,7 +76,9 @@
         Вы открываете глаза. Вокруг очень темно. Вы не понимаете, где находитесь. Пытаетесь вспомнить, как вы тут
         оказались, но ничего не получается. Вы хотите вернуться домой. Но для этого нужно что-то делать.
       </p>
-      <a class="area" href="#level-1-1">Продолжить</a>
+      <nav class="area">
+        <a tabindex="-1" href="#level-1-1">Продолжить</a>
+      </nav>
     </section>
     <section class="level" id="level-1-1">
       <h2>Глава 1. Начало</h2>
@@ -83,7 +91,9 @@
         вы упали именно оттуда, но выход слишком высоко, вам туда не попасть. Вам нужен другой путь. Осмотревшись, вы
         находите два прохода: один ведет влево, другой - вправо.
       </p>
-      <a class="area" href="#level-1-2">Продолжить</a>
+      <nav class="area">
+        <a tabindex="-1" href="#level-1-2">Продолжить</a>
+      </nav>
     </section>
 
     <section class="level" id="level-1-2">
@@ -102,25 +112,25 @@
         Они то появляются, то исчезают.
       </p>
       <nav class="area">
-        <a href="#level-2-0">Пойти направо к красным огонькам</a><br>
-        <a href="#level-2-1">Пойти налево в тихий тоннель</a><br>
-        <a href="#level-1-3">Остаться здесь и ждать помощи</a>
+        <a tabindex="-1" href="#level-2-0">Пойти направо к красным огонькам</a><br>
+        <a tabindex="-1" href="#level-2-1">Пойти налево в тихий тоннель</a><br>
+        <a tabindex="-1" href="#level-1-3">Остаться здесь и ждать помощи</a>
       </nav>
     </section>
     <section class="level" id="level-1-3">
       <h2>Глава 1. Начало</h2>
       <p class="area">
         Вы должны были начать идти, но вы испугались неизвестного. Разве бездействие лучше чем шанс
-        выбраться отсюда. Никто тебя не спасет. Ты осталься один. Но у тебя есть возможность попробовать выбраться.
+        выбраться отсюда. Никто тебя не спасет. Ты остался один. Но у тебя есть возможность попробовать выбраться.
       </p>
       <p class="area">
         В проходе слева не доносится ни единого звука. Абсолютная тишина. Справа где-то далеко видны горящие огоньки.
         Они то появляются, то исчезают.
       </p>
       <nav class="area">
-        <a href="#level-2-0">Пойти направо к красным огонькам</a><br>
-        <a href="#level-2-1">Пойти налево в тихий тоннель</a><br>
-        <a href="#death-0">Всё равно остаться здесь</a>
+        <a tabindex="-1" href="#level-2-0">Пойти направо к красным огонькам</a><br>
+        <a tabindex="-1" href="#level-2-1">Пойти налево в тихий тоннель</a><br>
+        <a tabindex="-1" href="#death-0">Всё равно остаться здесь</a>
       </nav>
     </section>
     <section class="level" id="level-2-0">
@@ -131,9 +141,9 @@
         ведущем направо, в темный проход, что-то ярко блестело.
       </p>
       <nav class="area">
-        <a href="#level-2-0-1">Пойти налево к красным огонькам</a><br>
-        <a href="#level-2-0-2">Пойти направо к чему-то блестящему</a><br>
-        <a href="#level-1-3">Вернуться обратно</a>
+        <a tabindex="-1" href="#level-2-0-1">Пойти налево к красным огонькам</a><br>
+        <a tabindex="-1" href="#level-2-0-2">Пойти направо к чему-то блестящему</a><br>
+        <a tabindex="-1" href="#level-1-3">Вернуться обратно</a>
       </nav>
     </section>
     <section class="level" id="level-2-0-1">
@@ -149,8 +159,8 @@
         темно, чтобы распознать откуда они идут.
       </p>
       <nav class="area">
-        <a href="#death-1">Подойти ближе и изучить источник огня</a><br>
-        <a href="#level-2-0">Вернуться обратно</a>
+        <a tabindex="-1" href="#death-1">Подойти ближе и изучить источник огня</a><br>
+        <a tabindex="-1" href="#level-2-0">Вернуться обратно</a>
       </nav>
     </section>
     <section class="level" id="level-2-0-2">
@@ -159,7 +169,9 @@
         Покинув предыдущее пространство, вы попали в новое, точно такое-же. Пустое, холодное и темное. Страх не покидал
         вас. Собравшись с мыслями, вы решили пройти к чему-то блестящему. Может это что-то ценное?
       </p>
-      <a href="#level-2-0-2-1" class="area">Продолжить</a>
+      <nav class="area">
+        <a tabindex="-1" href="#level-2-0-2-1">Продолжить</a>
+      </nav>
     </section>
     <section class="level" id="level-2-0-2-1">
       <h2>Глава 2. Куда ведёт темнота</h2>
@@ -173,9 +185,9 @@
         поможет?
       </p>
       <nav class="area">
-        <a href="#death-2">Попытаться вытащить меч</a><br>
-        <a href="#level-3-0">Пройти мимо</a><br>
-        <a href="#level-2-0">Вернуться обратно</a>
+        <a tabindex="-1" href="#death-2">Попытаться вытащить меч</a><br>
+        <a tabindex="-1" href="#level-3-0">Пройти мимо</a><br>
+        <a tabindex="-1" href="#level-2-0">Вернуться обратно</a>
       </nav>
     </section>
     <section class="level" id="level-3-0">
@@ -189,17 +201,20 @@
         виднелся свет, исходящий откуда-то вдали длинного тоннеля.
       </p>
       <nav class="area">
-        <a href="#happy-end-2">Пойти направо в тоннель с светом вдали</a><br>
-        <a href="#level-3-2">Пойти налево в тоннель с странным рёвом</a><br>
-        <a href="#level-2-0-2">Вернуться обратно</a>
+        <a tabindex="-1" href="#happy-end-2">Пойти направо в тоннель с светом вдали</a><br>
+        <a tabindex="-1" href="#level-3-2">Пойти налево в тоннель с странным рёвом</a><br>
+        <a tabindex="-1" href="#level-2-0-2">Вернуться обратно</a>
       </nav>
     </section>
     <section class="level" id="level-3-2">
       <h2>Глава 3. Выход близко</h2>
       <p class="area">
         Как только вы прошли тоннель, его завалило камнями. Пути назад нет. Но это была не главная проблема. Перед вами
-        стоял огромный дракон в алой чешуе. Это его рёв вы слышали в обрушевшимся тоннеле.</p>
-      <a href="#level-3-2-1" class="area">Продолжить</a>
+        стоял огромный дракон в алой чешуе. Это его рёв вы слышали в обрушевшимся тоннеле.
+      </p>
+      <nav class="area">
+        <a tabindex="-1" href="#level-3-2-1">Продолжить</a>
+      </nav>
     </section>
     <section class="level" id="level-3-2-1">
       <h2>Глава 3. Выход близко</h2>
@@ -212,8 +227,8 @@
         драконом. Также справа, вдали от них, был проход, откуда был виден выход наружу.
       </p>
       <nav class="area">
-        <a href="#death-3">Попытаться помочь волшебнику</a><br>
-        <a href="#happy-end-3">Прокрасться сзади к выходу</a>
+        <a tabindex="-1" href="#death-3">Попытаться помочь волшебнику</a><br>
+        <a tabindex="-1" href="#happy-end-3">Прокрасться сзади к выходу</a>
       </nav>
     </section>
     <section class="level" id="level-2-1">
@@ -223,8 +238,8 @@
         звуки. Также, если пройти дальше, есть проход в другое помещение.
       </p>
       <nav class="area">
-        <a href="#level-2-1-1">Подойти к существу</a><br>
-        <a href="#death-4">Пройти мимо</a>
+        <a tabindex="-1" href="#level-2-1-1">Подойти к существу</a><br>
+        <a tabindex="-1" href="#death-4">Пройти мимо</a>
       </nav>
     </section>
     <section class="level" id="level-2-1-1">
@@ -238,8 +253,8 @@
         который направил посох в вашу сторону.
       </p>
       <nav class="area">
-        <a href="#death-5">Напасть на волшебника</a><br>
-        <a href="#level-2-1-2">Ничего не делать</a>
+        <a tabindex="-1" href="#death-5">Напасть на волшебника</a><br>
+        <a tabindex="-1" href="#level-2-1-2">Ничего не делать</a>
       </nav>
     </section>
     <section class="level" id="level-2-1-2">
@@ -248,7 +263,9 @@
         Волшебник использовал своё заклинание. Это была заморозка. Паук больше не мог двигаться. Волшебник спросил, не
         видели ли мы его меч. Вы не смогли ответить. Тогда волшебник велел идти за ним и вы отправились дальше.
       </p>
-      <a href="#level-3-1" class="area">Продолжить</a>
+      <nav class="area">
+        <a tabindex="-1" href="#level-3-1">Продолжить</a>
+      </nav>
     </section>
     <section class="level" id="level-3-1">
       <h2>Глава 3. Выход близко</h2>
@@ -261,62 +278,76 @@
         Дракон был повержен. Вместе вы обнаружили два пути. Один вел налево, а другой - направо. Но правый проход
         завалило камнями. Так что вам пришлось идти дальше.
       </p>
-      <a href="#happy-end-1" class="area">Продолжить</a>
+      <nav class="area">
+        <a tabindex="-1" href="#happy-end-1">Продолжить</a>
+      </nav>
     </section>
 
     </section>
     <section class="level" id="death-0">
-      <h2>Вы мертвы.</h2>
+      <h2>Вы мертвы</h2>
       <p class="area">
         Вы решили ничего не делать и ждать помощи. Прошел день, но никто не пришёл. Уже прошла неделя, а
         может и всего два дня, вы уже не знаете сколько провели здесь в тишине. Вам жутко хочется есть, но
         нечего. Вы умерли от голода.
       </p>
-      <a class="area" href="#">Начать сначала</a>
+      <nav class="area">
+        <a tabindex="-1" href="#">Начать сначала</a>
+      </nav>
     </section>
     <section class="level" id="death-1">
-      <h2>Вы мертвы.</h2>
+      <h2>Вы мертвы</h2>
       <p class="area">
         Подойдя ближе, вы с ужасом понимаете, что это дети дракона. Вы заметили несколько невылупившихся яиц.
         Почувствовав опасность, они направили на вас свой огонь. Вы не успели спастись и сгорели заживо.
       </p>
-      <a class="area" href="#">Начать сначала</a>
+      <nav class="area">
+        <a tabindex="-1" href="#">Начать сначала</a>
+      </nav>
     </section>
     <section class="level" id="death-2">
-      <h2>Вы погибли.</h2>
+      <h2>Вы мертвы </h2>
       <p class="area">
         Пытаясь вытащить меч, вы случайно задели маленький камешек, он упал на булыжник и стал причиной падения
         множества тяжелых камней. В вашу сторону начали падать тонны булыжников. Вы не успели
         среагировать, как от вас осталось только раздавленное тело.
       </p>
-      <a href="#" class="area">Начать сначала</a>
+      <nav class="area">
+        <a tabindex="-1" href="#">Начать сначала</a>
+      </nav>
     </section>
     <section class="level" id="death-3">
-      <h2>Вы погибли</h2>
+      <h2>Вы мертвы</h2>
       <p class="area">
         Пытаясь помочь волшебнику, вы только помешали ему. Когда дракон заметил вас, он случайно задел волшебника своим
         громадным хвостом и оглушил его. Вы превратились в пепел и так и не узнали, что случилось с волшебником и тем
         драконом.
       </p>
-      <a href="#" class="area">Начать сначала</a>
+      <nav class="area">
+        <a tabindex="-1" href="#">Начать сначала</a>
+      </nav>
     </section>
     <section class="level" id="death-4">
-      <h2>Вы мертвы.</h2>
+      <h2>Вы мертвы</h2>
       <p class="area">
         Вы оказались в огромном пространстве, один. Вы думали, что вы были здесь одни, но рядом с вами находился
         огромный дракон, которого вы, к сожалению, разбудили. Вам ничего не оставалось, кроме как сгореть в ярком
         пламени.
       </p>
-      <a href="#" class="area">Начать сначала.</a>
+      <nav class="area">
+        <a tabindex="-1" href="#">Начать сначала.</a>
+      </nav>
     </section>
     <section class="level" id="death-5">
-      <h2>Вы погибли</h2>
+      <h2>Вы мертвы</h2>
       <p class="area">
         Нападая на волшебника, вы его напугали, и он от неожиданности направил на вас свое заклинание. Вы были
         заморожены и больше не могли двигаться, но вы могли видеть. Сначала паук разобрался с волшебником, а потом и с
         вами.
       </p>
-      <a href="#" class="area">Начать сначала</a>
+      <nav class="area">
+        <a tabindex="-1" href="#">Начать сначала</a>
+      </nav>
     </section>
 
     <section class="level" id="happy-end-1">
@@ -325,7 +356,9 @@
         Пройдя вперед, вы обнаружили много золота. Разделив его пополам, вы выбрались из пещеры и пошли по своим
         дорогам. Чудовище было повержено. Пещера теперь безопасна. Но так ли это?
       </p>
-      <a href="#footer" class="area">Продолжить</a>
+      <nav class="area">
+        <a tabindex="-1" href="#footer">Продолжить</a>
+      </nav>
     </section>
     <section class="level" id="happy-end-2">
       <h2>Конец игры</h2>
@@ -333,7 +366,9 @@
         Пройдя дальше, вы вышли из этой пещеры живым. Но все ли секреты вы нашли в пещере дракона? Остаётся только
         гадать, ведь вы не желали больше возвращаться обратно.
       </p>
-      <a href="#footer" class="area">Продолжить</a>
+      <nav class="area">
+        <a tabindex="-1" href="#footer">Продолжить</a>
+      </nav>
     </section>
     <section class="level" id="happy-end-3">
       <h2>Конец</h2>
@@ -341,16 +376,20 @@
         Вы нашли горы золота, но испугавшись, что придёт дракон, убежали, не собрав ни монеты. Вы больше никогда не
         узнаете, жив ли тот волшебник. Но вы никак не могли ему помочь, верно?
       </p>
-      <a href="#footer" class="area">Продолжить</a>
+      <nav class="area">
+        <a tabindex="-1" href="#footer">Продолжить</a>
+      </nav>
     </section>
   </main>
   <footer class="level" id="footer">
     <h2>Спасибо за прохождение игры!</h2>
     <p class="area">
       В игру также можно поиграть на сайте.<br>
-      <a href="https://arseny-ai.github.io/dragon-cave" target="_blank">arseny-ai.github.io/dragon-cave</a></p>
-    <p class="area"><a href="https://youtu.be/xm3YgoEiEDc" target="_blank">Ваша награда</a></p>
-    <p class="area"><a href="#">Главное меню</a></p>
+      <a tabindex="-1" href="https://arseny-ai.github.io/dragon-cave"
+        target="_blank">arseny-ai.github.io/dragon-cave</a>
+    </p>
+    <p class="area"><a tabindex="-1" href="https://youtu.be/xm3YgoEiEDc" target="_blank">Ваша награда</a></p>
+    <p class="area"><a tabindex="-1" href="#">Главное меню</a></p>
   </footer>
 </body>
 
